@@ -21,6 +21,10 @@ namespace Assignment_5._1._2
         static int SumDigits(int num)
         {
             int sum = 0;
+            if (num < 0)
+            {
+                num *= -1;
+            }
             while(num > 0)
             {
                 sum += num % 10;
